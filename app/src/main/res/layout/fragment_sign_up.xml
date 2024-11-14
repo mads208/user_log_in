@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/BackToLoginSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="237dp"
+            android:text="Go back to Log In ..."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignupSignup" />
+
+        <EditText
+            android:id="@+id/etUsernameSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="55dp"
+            android:ems="10"
+            android:hint="Email / Userame"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/etPasswordSignup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etPasswordSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="88dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/btnSignupSignup"
+            app:layout_constraintStart_toStartOf="@+id/etUsernameSignup"
+            app:layout_constraintTop_toBottomOf="@+id/etUsernameSignup" />
+
+        <Button
+            android:id="@+id/btnSignupSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="68dp"
+            android:text="Sign Up"
+            app:layout_constraintBottom_toTopOf="@+id/BackToLoginSignup"
+            app:layout_constraintEnd_toEndOf="@+id/BackToLoginSignup"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordSignup" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
