@@ -29,6 +29,7 @@ public class LoginFragment extends Fragment {
     private Button btnLogin;
     private FirebaseServices fbs;
     private TextView ForgotPassword;
+    private TextView GoToAdd;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -86,6 +87,13 @@ public class LoginFragment extends Fragment {
         etUsername = getView().findViewById(R.id.etUsernameLogin);
         etPassword = getView().findViewById(R.id.etPasswordLogin);
         btnLogin = getView().findViewById(R.id.btnLoginLogin);
+        GoToAdd = getView().findViewById(R.id.GoToAddLogin);
+        GoToAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoAddDataFragment();
+            }
+        });
         tvSignupLink = getView().findViewById(R.id.tvSignupLinkLogin);
         tvSignupLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,6 +139,13 @@ public class LoginFragment extends Fragment {
             }
         });
     }
+
+    private void gotoAddDataFragment() {
+        FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.frameLayOutMain, new AddDataFragment());
+        ft.commit();
+    }
+
     private void gotoSignupFragment() {
         FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.frameLayOutMain, new SignUpFragment());

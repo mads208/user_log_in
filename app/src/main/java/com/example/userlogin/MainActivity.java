@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         ft.commit();
     }
 
-   /* @Override
+    /*@Override
     protected void onStart() {
         super.onStart();
         gotoAddDataFragment();

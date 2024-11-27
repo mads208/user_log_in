@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.userlogin" />
-                  <option name="mobileSdkAppId" value="1:615747257191:android:7833386bb43c9ef51465c2" />
-                  <option name="projectId" value="user-log-in-c0f1d" />
-                  <option name="projectNumber" value="615747257191" />
+                  <option name="mobileSdkAppId" value="1:1059193674050:android:d15ee6115708ae6ce050db" />
+                  <option name="projectId" value="login-final-afd98" />
+                  <option name="projectNumber" value="1059193674050" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
