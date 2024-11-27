@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "615747257191",
-    "project_id": "user-log-in-c0f1d",
-    "storage_bucket": "user-log-in-c0f1d.appspot.com"
+    "project_number": "628541189009",
+    "project_id": "user-login-final",
+    "storage_bucket": "user-login-final.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:615747257191:android:7833386bb43c9ef51465c2",
+        "mobilesdk_app_id": "1:628541189009:android:9196e686045dc443b94830",
         "android_client_info": {
           "package_name": "com.example.userlogin"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBE37AKUmy0MafUSPXcC2c0KAmiOVTgej8"
+          "current_key": "AIzaSyA754_E2OFemxv9zqZKIKVOgAILxocrFY8"
         }
       ],
       "services": {
